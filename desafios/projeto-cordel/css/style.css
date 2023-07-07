@@ -4,82 +4,77 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03: 'Sriracha';
+}
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: white;
+    font-family: var(--fonte01);
 }
 
 header {
     background-color: black;
-    height: 265px;
+    color: white;
     text-align: center;
 }
-#titulo {
+
+header > h1 {
     padding-top: 50px;
-}
-a:hover {
-    text-decoration: underline;
-}
-header > div > h1 {
-    font-family: 'Passion One', cursive, sans-serif;
-    font-size: 90px;
-    color: white;
-    text-align: center;
     font-variant: small-caps;
+    font-family: var(--fonte02);
+    font-size: 10vw;
 }
-header > div > p {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+header > p {
+    padding-bottom: 50px;
 }
 a {
     text-decoration: none;
     color: white;
     font-weight: bolder;
 }
+a:hover {
+    text-decoration: underline;
+}
 main {
-    font-family: 'Sriracha', cursive;
-    font-size: 46px;
+    font-family: var(--fonte03);
 }
 section {
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    line-height: 2em;
 }
-main > section > article {
-    max-width: 500px;
-    margin-left: 30px;
-    line-height: 93px;
+.content {
+    padding-left: 30px;
 }
 .p {
-    display: inline-block;
-    margin-bottom: 100px;
-    width: 700px;
+    padding-bottom: 2em;
 }
 #conteiner {
     background-size: cover;
     background: yellow url(../imagens/background001.jpg) center center no-repeat fixed;
-    height: 700px;
-    position: relative;
-    box-shadow: inset 5px 5px 20px black;
+    box-shadow: inset 6px 6px 13px black;
 }
 #conteiner2 {
     background-size: cover;
     background: yellow url(../imagens/background002.jpg) center center no-repeat fixed;
-    height: 700px;
-    position: relative;
-    box-shadow: inset 0px 0px 10px black;
+    box-shadow: inset 6px 6px 13px black;
 }
 .p-conteiner {
     color: white;
-    background-color: rgba(0, 0, 0, 0.500);
-    width: 550px;
-    margin: 70px 30px;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.384);
+    display: inline-block;
+    padding: 5px;
+    margin: 60px 30px;
     text-shadow: 1px 1px 1px black;
 }
 footer {
@@ -88,9 +83,4 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding: 10px;
-}
-footer > p > a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
 }
