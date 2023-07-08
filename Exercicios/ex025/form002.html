@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Document</title>
 </head>
 <body>
-    
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php
+    " method="POST" autocomplete="off">
+    <p>
+        <label for="usuario">Usuário: </label>
+        <input type="text" name="usuario" id="usuario" required minlength="3" size="8" placeholder="Digite seu nome...">
+    </p>
+    <p>
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" required minlength="8" maxlength="20" placeholder="Digite sua senha...">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>
 </body>
 </html>
