@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php">
+        <p>
+            <label for="est">Estado:</label>
+            <select name="est" id="est">
+                <option value="vazio" selected>Escolha</option>
+                <optgroup label="Região Nordeste">
+                    <option value="CE">Ceará</option>
+                    <option value="BA">Bahia</option>
+                    <option value="AL">Alagoas</option>
+                </optgroup>
+                <optgroup label="Região Norte">
+                    <option value="AC">Acre</option>
+                    <option value="RR">Roraima</option>
+                    <option value="AP">Amapá</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="prof">Profissão: </label>
+            <input type="text" name="prof" id="prof" list="lsprof">
+            <datalist id="lsprof">
+                <option value="ADM">Administração</option>
+                <option value="AGRO">Agronegócio</option>
+                <option value="INFOR">Informática</option>
+                <option value="DCC">Desenhoo da Construção Civíl</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="mesag">Mensagem: </label><br>
+            <textarea name="msg" id="mesag" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
